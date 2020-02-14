@@ -8,12 +8,13 @@ public class EnemyController : MonoBehaviour
   public NavMeshAgent agent; //enemy AI navmesh
   public Vector3[] patrolPoints;
 
-  private int point = 0;
+  private int point;
 
     // Start is called before the first frame update
     void Start()
     {
       agent = GetComponent<NavMeshAgent>();
+      point = 0;
     }
 
     // Update is called once per frame
@@ -33,7 +34,7 @@ public class EnemyController : MonoBehaviour
         {
           point++;
         }
-        if (point >= patrolPoints.Length) //go back to start of patrol points 
+        if (point >= patrolPoints.Length) //go back to start of patrol points
         {
           point = 0;
         }

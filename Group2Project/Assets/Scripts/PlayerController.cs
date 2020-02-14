@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -47,5 +48,14 @@ public class PlayerController : MonoBehaviour
       velocity.y += gravity * Time.deltaTime;
 
       controller.Move(velocity * Time.deltaTime);
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+      if (other.tag == "Macguffin")
+      {
+        Debug.Log("did it");
+        SceneManager.LoadScene("Win");
+      }
     }
 }
