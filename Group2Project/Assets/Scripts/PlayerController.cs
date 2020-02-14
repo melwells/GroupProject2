@@ -16,11 +16,20 @@ public class PlayerController : MonoBehaviour
   public float groundDistance = 0.4f;
   public LayerMask groundMask;
 
+  Vector3 originalPos;
   Vector3 velocity; //help with gravity
   bool isGrounded; //are we on the ground
 
+  private int lives;
+
+  void Start()
+  {
+    originalPos = this.transform.position;
+    lives = 3;
+  }
+
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
       //checking for if we are on ground.
       isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
@@ -52,10 +61,33 @@ public class PlayerController : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+      //if you get the key, win the game
       if (other.tag == "Macguffin")
       {
         Debug.Log("did it");
         SceneManager.LoadScene("Win");
+      }
+
+      //if you walk into AI, lose a life and reset pos
+      if (other.tag == "Enemy")
+      {
+        //lose lives
+
+        //reset position
+        Respawn();
+        Debug.Log("got got");
+      }
+    }
+
+    void Respawn()
+    {
+      //transform.localPosition = new Vector3 (26, 2, -1);
+      this.transform.position = originalPos;
+      lives = lives - 1;
+
+      if (lives <= 0)
+      {
+        SceneManager.LoadScene("Lose");
       }
     }
 }

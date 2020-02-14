@@ -13,10 +13,10 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("escape"))
+      /*  if (Input.GetKeyDown("escape"))
         {
           Debug.Log("Quit Application");
           Application.Quit();
-        }
+        } */
     }
 }
