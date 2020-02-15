@@ -87,6 +87,8 @@ public class PlayerController : MonoBehaviour
 
       if (lives <= 0)
       {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene("Lose");
       }
     }
