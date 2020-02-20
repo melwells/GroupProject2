@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
   Vector3 velocity; //help with gravity
   bool isGrounded; //are we on the ground
 
-  private int lives;
+  public int lives;
 
   void Start()
   {
@@ -64,8 +64,8 @@ public class PlayerController : MonoBehaviour
       //if you get the key, win the game
       if (other.tag == "Macguffin")
       {
+        WinGame();
         Debug.Log("did it");
-        SceneManager.LoadScene("Win");
       }
 
       //if you walk into AI, lose a life and reset pos
@@ -77,6 +77,13 @@ public class PlayerController : MonoBehaviour
         Respawn();
         Debug.Log("got got");
       }
+    }
+
+    void WinGame()
+    {
+      Cursor.visible = true;
+      Cursor.lockState = CursorLockMode.None;
+      SceneManager.LoadScene("Win");
     }
 
     void Respawn()
