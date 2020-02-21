@@ -7,20 +7,33 @@ public class EnemyController : MonoBehaviour
 {
   public NavMeshAgent agent; //enemy AI navmesh
   public Vector3[] patrolPoints;
+  public float lookRadius = 10f;
+
+  Transform target;
 
   private int point;
 
     // Start is called before the first frame update
     void Start()
     {
+      target = PlayerManager.instance.player.transform;
       agent = GetComponent<NavMeshAgent>();
       point = 0;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-      Patrol();
+      //Patrol();
+      float distance = Vector3.Distance (target.position, transform.position);
+      if (distance <= lookRadius)
+      {
+        agent.SetDestination(target.position);
+      }
+      if (distance > lookRadius)
+      {
+        Patrol();
+      }
     }
 
     //traverse NavMesh
@@ -39,5 +52,12 @@ public class EnemyController : MonoBehaviour
           point = 0;
         }
       }
+
+    }
+
+    void OnDrawGizmosSelected() //debug purposes. See enemy's line of sight
+    {
+      Gizmos.color = Color.red;
+      Gizmos.DrawWireSphere(transform.position, lookRadius);
     }
 }
