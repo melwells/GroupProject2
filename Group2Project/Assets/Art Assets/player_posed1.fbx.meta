@@ -1,0 +1,170 @@
+fileFormatVersion: 2
+guid: 3093bfe47deac9a4aa3fc8f21865944b
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Bone.011
+    100004: Bone.011_end
+    100006: Chest
+    100008: Cube
+    100010: Foot.L
+    100012: Foot.L_end
+    100014: Foot.R
+    100016: Foot.R_end
+    100018: Hand.L
+    100020: Hand.L_end
+    100022: Hand.R
+    100024: Hand.R_end
+    100026: Head
+    100028: Head_end
+    100030: IKLegPole.L
+    100032: IKLegPole.L_end
+    100034: IKLegPole.R
+    100036: IKLegPole.R_end
+    100038: IKLegTarget.L
+    100040: IKLegTarget.L_end
+    100042: IKLegTarget.R
+    100044: IKLegTarget.R_end
+    100046: LowerArm.L
+    100048: LowerArm.R
+    100050: LowerLeg.L
+    100052: LowerLeg.R
+    100054: Neck
+    100056: Pelvis
+    100058: //RootNode
+    100060: Shoulder.L
+    100062: Shoulder.R
+    100064: Spine
+    100066: UpperArm.L
+    100068: UpperArm.R
+    100070: UpperLeg.L
+    100072: UpperLeg.R
+    400000: Armature
+    400002: Bone.011
+    400004: Bone.011_end
+    400006: Chest
+    400008: Cube
+    400010: Foot.L
+    400012: Foot.L_end
+    400014: Foot.R
+    400016: Foot.R_end
+    400018: Hand.L
+    400020: Hand.L_end
+    400022: Hand.R
+    400024: Hand.R_end
+    400026: Head
+    400028: Head_end
+    400030: IKLegPole.L
+    400032: IKLegPole.L_end
+    400034: IKLegPole.R
+    400036: IKLegPole.R_end
+    400038: IKLegTarget.L
+    400040: IKLegTarget.L_end
+    400042: IKLegTarget.R
+    400044: IKLegTarget.R_end
+    400046: LowerArm.L
+    400048: LowerArm.R
+    400050: LowerLeg.L
+    400052: LowerLeg.R
+    400054: Neck
+    400056: Pelvis
+    400058: //RootNode
+    400060: Shoulder.L
+    400062: Shoulder.R
+    400064: Spine
+    400066: UpperArm.L
+    400068: UpperArm.R
+    400070: UpperLeg.L
+    400072: UpperLeg.R
+    2100000: Material
+    4300000: Cube
+    7400000: Armature|Default
+    9500000: //RootNode
+    13700000: Cube
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
