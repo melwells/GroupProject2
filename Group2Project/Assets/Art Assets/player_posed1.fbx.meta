@@ -82,7 +82,12 @@ ModelImporter:
     7400000: Armature|Default
     9500000: //RootNode
     13700000: Cube
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Player Colors
+    second: {fileID: 2800000, guid: 100ae025731560149b463fb63934daef, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

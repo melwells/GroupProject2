@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
   public float gravity = -9.81f;
   public float jumpHeight = 3f;
 
+  public AudioSource footsteps;
+
 //checking for whether or not player is touching the ground
   public Transform groundCheck;
   public float groundDistance = 0.4f;
@@ -37,7 +39,9 @@ public class PlayerController : MonoBehaviour
       if (isGrounded && velocity.y <0)
       {
         velocity.y = -2f;
+        footsteps.Play();
       }
+
 
       //controlling movement
       float x = Input.GetAxis("Horizontal"); //x axis
